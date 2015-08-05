@@ -1,0 +1,36 @@
+.arrow-up {
+	width: 0px;
+	height: 0px;
+	border-bottom: 10px solid black;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	position: relative;
+	left: 10px;
+	display: none;
+}
+.container {
+	background: black;
+	width: 100px;
+	height: 100px;
+	border-radius: 10px;
+	color: #fff;
+	padding: 10px;
+}
+.wrapper {
+	transition: all
+}
+.wrapper:before {
+	width: 0px;
+	height: 0px;
+	content: '';
+	color: white;
+	border-bottom: 10px solid black;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	position: relative;
+	left: 20px;
+	display: block;
+}
+.wrapper.unfold {
+	height: 80px;
+}

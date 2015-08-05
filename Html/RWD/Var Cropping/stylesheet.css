@@ -1,0 +1,9 @@
+div#foreground{
+	width: 50%;
+	height: 385px;
+	border: 2px solid black;
+	overflow: hidden;
+}
+div#foreground img {
+	float: right;
+}

@@ -1,0 +1,81 @@
+.track-progress {
+	width: 50%;
+	margin: 0 auto;
+	padding: 0;
+	list-style-type: none;
+	font-size: 0;
+}
+.track-progress li{
+	display: inline-block;
+	font-size: 15px;
+	padding: 0;
+	margin: 0;
+	height: 30px;
+	line-height: 30px;
+	background: #f0f0f0;
+	position: relative;
+}
+.track-progress[data-steps="3"] li {
+	width: 33%;
+	text-align: center;
+}
+.track-progress li > span {
+	display: block;
+	color: #999;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.track-progress li.done > span {
+	color: #666;
+	background: #ccc;
+}
+.track-progress li > span::after,
+.track-progress li > span::before {
+	content: "";
+	display: block;
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 15px solid transparent;
+	border-left-color: #f0f0f0;
+}
+.track-progress li > span::after {
+	top: -5px;
+	z-index: 1;
+	border-left-color: white;
+	border-left-color: ared;
+	border-width: 20px;
+}
+.track-progress li.done + li > span::before {
+	border-left-color: #ccc;
+}
+.track-progress li > span::before {
+	z-index: 2;
+}
+.track-progress li:first-child > span::before,
+.atrack-progress li:first-child > span::after {
+	border-left-color: white;
+}
+/*.track-progress li:first-child i, 
+.track-progress li:last-child i  */
+/* atrack-progress li:last-child*/
+.track-progress li:last-child i {
+	display: block;
+	border: 15px solid white;
+	border-left-color: transparent;
+	position: absolute;
+	height: 0;
+	width: 0;
+	top: 0;
+	right: -15px;
+} 
+.darken {
+	animation: chColor 1s linear;
+	background: #
+}
+@keyframes chColor {
+	from {background: #f0f0f0;}
+	to {background: #ccc}
+}

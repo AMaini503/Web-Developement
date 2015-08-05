@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>	
+	<head>
+		<link href="stylesheet.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div id="container">
+			<div id="card">
+				<div id="front"></div>
+				<div id="back"></div>
+			</div>
+		</div>
+		<script>	
+			var obj = document.getElementById('container');
+			var item = document.getElementById('card');
+			
+			obj.addEventListener("mouseover", function(){
+				item.className = item.className + " flipped";
+			}, false);
+			
+			obj.addEventListener("mouseout", function(){
+				item.className = "";
+			}, false);
+		</script>
+	</body>
+</html>

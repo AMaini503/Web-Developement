@@ -1,0 +1,23 @@
+#wrapper-tag {
+	position: relative;
+	font-size: 0;
+}
+#wrapper-tag div {
+	display: inline-block;
+}
+.rectangle {
+	min-width: 40px;
+	width: autol
+	height: 40px;
+	background: #BEF781;
+	border-radius: 8px;
+}
+.tri-right {
+	position: relative;
+	top: -15px;
+	border-left: 10px solid #BEF781;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	height: 0;
+	width: 0;
+}

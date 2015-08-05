@@ -1,0 +1,49 @@
+html, body {
+	height: 100%;
+}
+@media only screen and (max-width: 480px) {
+	/* Smart Phone - 1 Tile per row*/
+	.box {
+		width: 100%;
+		padding-bottom: 100%;
+	}
+}
+@media only screen and (max-width: 650px) and (min-width: 481px) {
+	/* Tablet 2 Tiles per row */
+	.box {
+		width: 50%;
+		padding-bottom: 50%;
+	}
+}
+@media only screen and (max-width: 1050px) and (min-width: 651px) {
+	/* Ipad 3 tiles per row */
+	.box {
+		width: 33.3%;
+		padding-bottom: 33.3%;
+	}
+}
+@media only screen and (max-width: 1290px) and (min-width: 1051px) {
+	.box {
+		width: 25%;
+		padding-bottom: 25%;
+	}
+}
+#wrap {
+	
+}
+.box {
+	width: 20%;
+	padding-bottom: 20%;
+	color: #fff;
+	position: relative;
+	float: left;
+}
+.innerContent {
+	position: absolute;
+	left: 1px;
+	right: 1px;
+	top: 1px;
+	bottom: 1px;
+	background: #66f;
+	padding: 10px;
+}

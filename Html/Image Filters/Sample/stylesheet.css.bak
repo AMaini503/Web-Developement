@@ -1,0 +1,45 @@
+#camera { 
+	width: 600px;
+	height: 500px;
+	margin: auto;
+	perspective: 800px;
+	perspective-origin: top;
+}
+#container {
+	width: inherit;
+	height: inherit;
+	transform-style: preserve-3d;
+}
+#container .face {
+	background-color: rgba(5, 5, 5, 0.1);
+	width: inherit;
+	height: inherit;
+	border: 1px solid white;
+	position: absolute;
+	text-align: center;
+	line-height: 500px;
+	font-size: 40px;
+}
+#container .file {
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	transform: translateZ(-300px);
+}
+#container .file img {
+	width: inherit;
+	height: inherit;
+}
+
+#container .left {
+	transform: rotateY(90deg) translateZ(300px);
+}
+#container .right {
+	transform: rotateY(-90deg) translateZ(300px);
+}
+#container .back {
+	transform: rotateY(180deg) translateZ(300px);
+}
+#container div:nth-child(5) img {
+	transform: translateZ(-200px);
+}

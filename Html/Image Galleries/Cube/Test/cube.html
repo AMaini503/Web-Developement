@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="stylesheet.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div id="camera">
+			<div id="object">
+				<div class="face front">F</div>
+				<div class="face back">Ba</div>
+				<div class="face top">T</div>
+				<div class="face bottom">Bo</div>
+				<div class="face left">L</div>
+				<div class="face right">R</div>
+			</div>
+		</div>
+		<button id="front">Front</button>
+		<button id="back">Back</button>
+		<button id="left">Left</button>
+		<button id="right">Right</button>
+		<button id="top">Top</button>
+		<button id="bottom">Bottom</button>
+		<script>
+			function assignClass(cname) {
+				document.getElementById('object').className = cname;
+			}
+			var front = document.getElementById('front');
+			var back = document.getElementById('back');
+			var left = document.getElementById('left');
+			var right = document.getElementById('right');
+			var atop = document.getElementById('top');
+			var bottom = document.getElementById('bottom');
+
+			front.addEventListener("click", function() {console.log("front");assignClass("show-front")}, false);
+			back.addEventListener("click", function() {console.log("back");assignClass("show-back")}, false);
+			left.addEventListener("click", function() {console.log("left");assignClass("show-left")}, false);
+			right.addEventListener("click", function() {console.log("right");assignClass("show-right")}, false);
+			atop.addEventListener("click", function() {console.log("top");assignClass("show-top")}, false);
+			bottom.addEventListener("click", function() {console.log("bottom");assignClass("show-bottom")}, false); 
+		</script>
+	</body>
+</html>

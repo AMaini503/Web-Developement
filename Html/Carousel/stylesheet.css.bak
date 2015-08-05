@@ -1,0 +1,72 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+.navbar {
+	position: fixed;
+	overflow: auto;
+	height: 50px;
+	background-color: #B404AE;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+}
+.navbar > ul > li > a {
+	text-decoration: none;
+	color: white;
+}
+.navbar > ul > li {
+	display: inline;
+	list-style-type: none;
+	padding: 15px;
+}
+.navbar > ul {
+	padding: 0px;
+	margin: 0px;
+	margin-top: 15px;
+}
+.pull-left {
+	float: left;
+}
+.pull-right {
+	float: right;	
+}
+.jumbotron {
+	width: 100%;
+	background-color: black;
+	overflow: auto;
+	height: 92vh;
+	padding-right: 0px;
+}
+#carousel-cont {
+	background-color: #cccccc;
+	height: 344px;
+	overflow: hidden;
+}
+#carousel-cont > ul {
+	width: 9999px;
+	padding: 0px;
+	margin: 0px;
+	left: 0px;
+	position: relative;
+}
+#carousel-cont > ul > li {
+	float: left;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+#left-scroll, #right-scroll {
+	height: 344px;
+	background-color: #bbbbbb;
+	text-align: center;
+	line-height: 344px;
+}
+#left-scroll > img, #right-scroll > img {
+	height: 32px;
+	width: 32px;
+	cursor: pointer;
+}
+#right-scroll { 
+	margin-right: -10px
+}

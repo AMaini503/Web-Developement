@@ -1,0 +1,13 @@
+<html>
+	<head>
+		<link href="stylesheet.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div id="wrapper-tag">
+			<ul>
+				<li><div class="rectangle"></div></li>
+				<li><div class="tri-right"></div></li>
+			</ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="stylesheet.css" rel="stylesheet"/>
+		<script src="../classie.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<nav class="menu push-menu-left">
+			<ul>
+				<li><a href=="#">Facebook</a></li>
+				<li><a href=="#">Google</a></li>
+				<li><a href=="#">LinekdIn</a></li>
+				<li><a href=="#">Flipkart</a></li>
+			</ul>
+		</nav>
+		<div id="container">		
+			<button id="toggle-pml">Push Menu Left &rarr;</button>
+			<h3>This is the Content Section.</h3>
+		</div>
+		<script>	
+			(function ( window ) {
+				var togglePushMenuLeft = document.querySelector("#toggle-pml"),
+				body = document.body, 
+				mask = document.createElement("div");
+				mask.id = "mask";
+				
+				togglePushMenuLeft.addEventListener("click", function() {
+					var obj = document.getElementById('mask');
+					if(obj === null) {
+						document.body.appendChild(mask);
+					}
+					else {
+						document.body.removeChild(mask);
+					}
+					classie.toggle(body, "pml-open");
+					
+				});
+			}) ( window);
+		</script>
+	</body>
+</html>

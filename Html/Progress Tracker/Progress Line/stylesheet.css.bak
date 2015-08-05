@@ -1,0 +1,55 @@
+#wrapper {
+	width: 100%;
+}
+#wrapper ul.prog-tracker {
+	width: 70%;
+	padding: 0;
+	margin: 0 auto;
+	list-style-type: none;
+	font-size: 0;
+}
+#wrapper ul.prog-tracker li {
+	display: inline-block;
+	line-height: 3em;
+	text-align: center;
+	font-size: 15px;
+}
+a#wrapper ul.prog-tracker li::after {
+	content: "\00a0\00a0";
+}
+#wrapper ul.prog-tracker li::before {
+	position: relative;
+	bottom: -2.5em;
+	float: left;
+	left: 50%;
+	line-height: 1em;
+}
+#wrapper ul.prog-tracker li.prog-trckr-done {
+	color: black;
+	border-bottom: 4px solid yellowgreen;
+}
+#wrapper ul.prog-tracker li.prog-trckr-todo {
+	color: silver;
+	border-bottom: 4px solid silver;
+}
+#wrapper ul.prog-tracker li.prog-trckr-done::before {
+	position: relative;
+	float: left;
+}
+#wrapper ul.prog-tracker li.prog-trckr-done::before {
+	content: "\2713";
+	color: white;
+	background: yellowgreen;
+	height: 1.2em;
+	width: 1.2em;
+	border-radius: 50%;
+	border: none;
+}
+#wrapper ul.prog-tracker li.prog-trckr-todo::before {
+	content: "\039F";
+	color: silver;
+	background: white;
+	font-size: 1.5em;
+}
+#wrapper ul.prog-tracker[data-progtrckr-steps="2"] li { width: 49%; }
+#wrapper ul.prog-tracker[data-progtrckr-steps="3"] li { width: 33%; }

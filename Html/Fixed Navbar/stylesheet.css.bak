@@ -1,0 +1,51 @@
+.nav a { 
+	text-decoration: none;
+	padding: 0px 15px;
+	color: #aabbcc;
+	border-radius: 5px;
+	font-size: 20px;
+	abackground-color: #dddddd;
+}
+.nav li { 
+	list-style-type: none;
+	display: inline;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.nav ul { 
+	abackground-color: red;
+	padding: 0px;
+}
+.nav .pull-left {
+	float: left;
+	clear: both;
+	opacity: 1;
+}
+.nav .pull-right {
+	float: right;
+}
+.nav { 
+	border-bottom: 1px solid #aabbcc;
+	overflow: auto;
+	position: fixed;
+	width: 100%;
+	background-color: #00a087;
+	top: 0;
+	left: 0;
+}
+.jumbotron p:nth-child(1) {
+	text-align: center;
+	color: #bc11ff;
+	font-family: sans-serif;
+}
+.jumbotron p {
+	font-family: sans-serif;
+	padding: 20px;
+}
+.main-cont {
+	background-color: #eeeeee;
+	margin-left: 10%;
+	margin-right: 10%;
+	font-family: sans-serif;
+	margin-top: 57px;
+}

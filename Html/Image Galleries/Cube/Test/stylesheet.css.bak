@@ -1,0 +1,63 @@
+#camera { 
+	width: 500px;
+	height: 500px;
+	position: relative;
+	perspective: 800px;
+	perspective-origin: 100px 100px;
+	margin: 100px  0 0 100px;
+}
+#object {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	transform-style: preserve-3d;
+	transition: transform 0.5s;
+}
+#object .face {
+	width: 200px;
+	height: 200px;
+	background-color: rgb(3, 3, 3);
+	border: 1px solid white;
+	line-height: 200px;
+	text-align: center;
+	font-size: 20px;
+	color: white;
+	position: absolute;
+	opacity: 0.5;
+}
+#object .front {
+	transform: translateZ(100px);
+}
+#object .back {
+	transform: rotateY(180deg) translateZ(100px);
+}
+#object .left {
+	transform: rotateY(-90deg) translateZ(100px);
+}
+#object .right {
+	transform: rotateY(90deg) translateZ(100px);
+}
+#object .top {
+	transform: rotateX(90deg) translateZ(100px);
+}
+#object .bottom {
+	transform: rotateX(-90deg) translateZ(100px);
+}
+#object.show-front {
+
+}
+#object.show-back {
+	transform: translateZ(-100px) rotateY(-180deg);
+}
+#object.show-left {
+	transform: rotateY(90deg);
+}
+#object.show-right {
+	transform: translateZ(-100px) rotateY(-90deg);
+}
+#object.show-top {
+	transform: translateZ(-100px) rotateX(-90deg);
+}
+#object.show-bottom {
+	transform: translateZ(-100px) rotateX(90deg);
+} 

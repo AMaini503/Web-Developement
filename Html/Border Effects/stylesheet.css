@@ -1,0 +1,33 @@
+/*div#one {
+	border: 150px solid rgba(0,0,0,0);
+	border-radius: 100%;
+	-webkit-box-sizing: border-box;
+	-webkit-background-clip: padding-box;
+	background-image: url('city1.jpg');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	width: 300px;
+	height: 300px;
+	-webkit-transition:  0.5s ease;
+}
+div#one:hover {
+	-webkit-border-width: 0;
+	border-width: 0;
+	border-color: rgba(0,0,0,0.7);
+}*/
+a {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background-image: url('city.jpg');
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	border: 50px solid rgba(0,0,0,0.7);
+	border-radius: 100%;
+	-webkit-box-sizing: border-box;
+	transition: ease 0.5s;
+}
+a:hover {
+	border-width: 0;
+	border-color: rgba(0,0,0,0.5);
+}

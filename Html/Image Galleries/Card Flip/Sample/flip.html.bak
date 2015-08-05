@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<link href="stylesheet.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="container">
+			<div id="card">
+				<div class="front"></div>
+				<div class="back"></div>
+			</div>
+		</div>
+		<div class="content">
+			
+		</div>
+		<script>
+			var obj = document.querySelector('.container');
+
+			obj.addEventListener("mouseover", function() {
+				var item = document.getElementById('card');
+				item.className = item.className + "flipped";
+			}, false);
+
+			obj.addEventListener("mouseout", function() {
+				var item = document.getElementById('card');
+				item.className = "";
+			}, false);
+		</script>
+	</body>
+</html>

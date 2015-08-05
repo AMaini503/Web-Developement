@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<link href="stylesheet.css" rel="stylesheet" />
+		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="socialfloat">
+			<a class="btnz share facebook" href="#"><i class="fa fa-facebook"></i></a>
+			<a class="btnz share gplus" href="#"><i class="fa fa-google-plus"></i></a>
+			<a class="btnz share twitter" href="#"><i class="fa fa-twitter"></i></a>
+			<a class="btnz share stumbleupon" href="#"><i class="fa fa-stumbleupon"></i></a>
+			<a class="btnz share buffer" href="#"><i class="fa fa-share"> Share</i></a>
+		</div>
+	</body>
+</html>

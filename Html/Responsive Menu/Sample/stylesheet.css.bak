@@ -1,0 +1,85 @@
+body, html {
+	margin: 0;
+	padding: 0;
+}
+.toggle-nav {
+	display: none;
+}
+.clearfix {
+	clear: both;
+}
+nav {
+	background: black;
+}
+nav ul {
+	background: black;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: inline-block;
+	position: absolute;
+	margin-top: 8px;
+}
+nav ul li {
+	padding: 10px 20px;
+	display: inline-block;
+}
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 15px;
+}
+.search-form {
+	float: right;
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px 0px;
+	margin: 0px 10px;
+}
+.search-form input {
+	box-sizing: border-box;
+	border-radius: 5px;
+	margin: 0px 10px;
+	padding: 5px;
+}
+.search-form button {
+	color: white;
+	background: blue;
+	border: none;
+	padding: 10px;
+	border-radius: 10px;
+}
+/* 
+#div1 {
+	float: right;
+	background: red;
+}
+#div2 {
+	float: left;
+	background: green;
+} */
+@media screen and (max-width: 970px) {
+	.search-form input {
+		width: 120px;
+	}
+}
+@media screen and (min-width: 860px) {
+	.menu {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 1150px) { 
+	
+}
+@media screen and (max-width: 970px) {
+
+	.search-form input {
+		width: 120px;
+	}
+}
+@media screen and (max-width: 860px) {
+	.menu {
+		position: relative;
+		display: inline-block;
+	}
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="stylesheet.css" rel="stylesheet" />
+		<script src="jquery.js"></script>
+	</head>
+	<body>
+		<input type="file" id="fileInput" />
+	</body>
+	<div class="container">
+	</div>
+	<script>
+			var colors = new Array();
+			var readSingleFile = function(evt) {
+				var f = evt.target.files[0];
+				var r = new FileReader();
+
+				r.onload = function(e) {
+					var contents = e.target.result;
+					var num = contents.length/8;
+					for(var i = 0; i<num; i++) {
+						var color = contents.substring( i * 8, i * 8 + 7);
+						console.log("Color " + i + " : " + color);
+						
+						var oldHtml = $(".container").html();
+						$(".container").html( oldHtml + '<div class="color-div">' + color + '</div>');
+						$(".color-div:nth-child(" + (i + 1) + ")").css({"background-color": color});
+
+					}
+				}
+				r.readAsText(f);
+
+			};
+			document.getElementById('fileInput').addEventListener('change', readSingleFile, false);
+	</script>
+</html>
+

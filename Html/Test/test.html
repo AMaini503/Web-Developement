@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="stylesheet.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a>Item</a></li>
+				<li><a>Item</a></li>
+				<li><a>Item &#x25BE;</a>
+					<ul class="main-menu">
+						<li><a>MenuItem</a></li>
+						<li><a>MenuItem</a></li>
+						<li class="expandable"><a href="#">MenuItem</a>
+							<ul class="sub-menu">
+								<li><a href="#">SubMenu</a></li>
+								<li class="expandable"><a href="#">SubMenu </a>
+									<ul class="sub-menu">
+										<li><a>SubMenu</a></li>
+										<li><a>SubMenu</a></li>
+										<li><a>SubMenu</a></li>
+										<li><a>SubMenu</a></li>
+									</ul>
+								</li>
+								<li><a>SubMenu</a></li>
+								<li><a>SubMenu</a></li>
+							</ul>
+						</li>
+						<li><a href="#">MenuItem</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Item</a></li>
+			</ul>
+		</nav>
+		<script>
+			function showMenu() {
+				console.log("Element: " + this);
+			}
+			var obj = document.getElementsByClassName("expandable");
+
+			for(var i = 0; i<obj.length; i++) {
+				obj[i].addEventListener('click', showMenu, false);
+			}
+		</script>
+	</body>
+</html>

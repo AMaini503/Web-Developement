@@ -1,0 +1,7 @@
+div#background {
+	height: 385px;
+	width: 50%;
+	background: url('city.jpg') no-repeat;
+	background-position: right;
+	border: 2px solid #000;
+}

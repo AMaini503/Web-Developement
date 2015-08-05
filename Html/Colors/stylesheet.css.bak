@@ -1,0 +1,18 @@
+* { 
+	padding: 0px;
+	margin: 0px;
+}
+.container {
+	margin: 50px 1px;
+	border: 1px solid #cccccc;
+}
+.color-div {
+	width: 341px;
+	height: 108px;
+	display: inline-block;
+}
+.color-div p {
+	font-family: sans-serif;
+	text-align: center;
+	margin-top: 10px;
+}

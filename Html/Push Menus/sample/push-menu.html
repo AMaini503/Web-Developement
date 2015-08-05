@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="stylesheet.css" rel="stylesheet" />
+		<script src="../classie.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<nav class="menu push-menu-left">
+			<ul>	
+				<li><button class="close-menu">&larr; Close</button></li>
+				<li><a href="#">Brocolli</a></li>
+				<li><a href="#">Cauliflower</a></li>
+				<li><a href="#">Carrot</a></li>
+				<li><a href="#">Tomato</a></li>
+			</ul>
+		</nav>
+		<div id="wrapper">
+			<div id="main">
+				<div class="container">
+					<div class="buttons">
+						<button class="nav-toggler toggle-push-left">Push Menu</button>
+					</div>
+					<section class="content">
+						<h1>Vegetables</h1>
+						<p>Turnip greens yarrow...</p>
+					</section>
+				</div> 
+			</div>
+		</div>
+		<script>
+		(function ( window ) {
+			var body = document.body,
+				mask = document.createElement("div"),
+				togglePushLeft = document.querySelector(".toggle-push-left"),
+				pushMenuLeft = document.querySelector('.push-menu-left'),
+				activeNav;
+
+				mask.className = "mask";
+				
+				/* push-menu-left */
+				togglePushLeft.addEventListener("click", function() {
+					classie.add(body, 'pml-open');
+					document.body.appendChild(mask);
+					activeNav = "pml-open";
+				});
+				
+				mask.addEventListener( "click", function() {
+					classie.remove(body, activeNav);
+					avtiveNav = "";
+					document.body.removeChild(mask);
+				});
+				[].slice.call(document.querySelectorAll(".close-menu")).forEach(function (el, i) {
+					el.addEventListener( "click", function() {
+						classie.remove(body, activeNav);
+						activeNav = "";
+						document.body.removeChild(mask);
+					});
+				});
+				}) ( window);
+		</script>
+	</body>
+</html>

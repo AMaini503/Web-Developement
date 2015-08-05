@@ -1,0 +1,11 @@
+#outer {
+	background: url('city.jpg') no-repeat;
+	width: 100%;
+	max-width: 1000px;
+	height: 400px;
+}
+#inner {
+	background: url('city2.jpg') no-repeat;
+	height: 285px;
+	width: 100px;
+}

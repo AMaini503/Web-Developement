@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<link href="stylesheet.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<nav>
+				<span class="resp-dropDown">&#x2630;</span>
+				<ul class="main-menu">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Jobs</a></li>
+					<li class="expandable"><a href="#">More &#x25BE;</a>
+						<ul class="sub-menu">
+							<li><a href="#">Tuts</a></li>
+							<li><a href="#">Codes</a></li>
+							<li><a href="#">Lectures</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		<script>
+			function toggleDisp() {
+				var li_arr = document.querySelectorAll('nav ul.main-menu li');
+				var dispStyle = "block";
+				if(li_arr[0].style.display === "block") {
+						dispStyle = "none";
+					}
+				for(var i = 0; i<li_arr.length; i++) {
+					li_arr[i].style.display = dispStyle;
+				}
+			}
+			function expand() {
+				var sub_menu = this.querySelector('ul.sub-menu');
+				var sub_menu_children = sub_menu.getElementsByTagName("li");
+				var i;
+				if(sub_menu.style.display === "none") {
+					sub_menu.style.display = "block";
+				}
+				else if(sub_menu.style.display === "block" || sub_menu.style.display === ""){
+					sub_menu.style.display = "none";
+				}
+			};
+			var anchor_arr = document.getElementsByClassName('expandable');
+			// console.log("hey!");
+			for(var i = 0; i<anchor_arr.length; i++) {
+				anchor_arr[i].addEventListener('click', expand, false);
+			}
+			var ham_icon = document.querySelector('.wrapper span.resp-dropDown');
+			var main_menu = document.querySelector('nav ul.main-menu');
+			ham_icon.addEventListener('click', function() {
+				if(main_menu.style.display === "block" || main_menu.style.display === "") {
+						main_menu.style.display = "none";
+				}
+				else {
+					main_menu.style.display = "block";
+				}
+			}, false);
+			window.addEventListener('resize', function(){
+				if(innerWidth > 500) {
+					document.querySelector('nav ul.main-menu').style.display = "block";
+				}
+			}, false)
+		</script>
+	</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "title": "club-tabs",
+  "name": "club-tabs-addon",
+  "version": "0.0.1",
+  "description": "Clubs all the tabs of the firefox into one",
+  "main": "index.js",
+  "author": "Aayush Maini",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT"
+}

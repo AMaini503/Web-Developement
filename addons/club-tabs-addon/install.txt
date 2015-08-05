@@ -1,0 +1,7 @@
+###############################
+
+Installation behind proxy requires use of --proxy option -->
+
+$> [sudo] npm --proxy "http://proxy_host:portno" install jpm -g
+
+

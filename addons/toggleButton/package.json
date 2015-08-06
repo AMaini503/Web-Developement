@@ -1,0 +1,13 @@
+{
+  "title": "tButton",
+  "name": "togglebutton",
+  "version": "0.0.1",
+  "description": "A simple toggle Button",
+  "main": "index.js",
+  "author": "Aayush Maini",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT"
+}
